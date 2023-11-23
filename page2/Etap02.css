@@ -1,0 +1,139 @@
+.boxone {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(37, 119, 2);
+  position: absolute;
+  left: 23%;
+  top: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxone h1
+{
+  margin-top: 7px;
+}
+.boxtwo {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(37, 119, 2);
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  top: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxtwo h1
+{
+  margin-top: 7px;
+}
+.boxtree {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(177, 176, 176);
+  position: absolute;
+  right: 23%;
+  top: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxtree h1
+{
+  margin-top: 7px;
+}
+.boxone h1 {
+  font-size: 25px;
+  color: hsl(0, 26%, 86%);
+}
+.boxtwo h1 {
+  font-size: 25px;
+  color: hsl(0, 26%, 86%);
+}
+.boxtree h1 {
+  font-size: 25px;
+  color: hsl(198, 62%, 7%);
+}
+.trtwo {
+  margin-left: -1px;
+  width: 245px;
+    height: 5px;
+  background-color: rgb(215, 211, 211);
+  position: absolute;
+  left: 51.65%;
+  top: 45px;
+}
+.trone {
+  margin-left: -4px;
+    width: 245px;
+    height: 5px;
+  background-color: rgb(37, 119, 2);
+  position: absolute;
+  left: 26.3%;
+  top: 45px;
+}
+.form2 {
+  width: 60%;
+  height: 100%;
+  padding: 15px 20px 0px 20px;
+}
+.top-botton1 {
+  width: 100%;
+  height: 85%;
+}
+
+/*  */
+.top,
+.centre,
+.bottom {
+  width: 100%;
+  height: 33.33%;
+  display: flex;
+  gap: 8px;
+}
+.top-botton1 p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(21, 7, 73);
+}
+.top-botton1 input {
+  width: 186.34px;
+  height: 35px;
+  outline: none;
+  border-radius: 6px;
+  border: 0;
+  padding: 0 10px;
+  border: 1px solid rgb(186, 182, 182);
+  background-color: rgba(249, 244, 244, 0.76);
+}
+.top-botton1 select {
+  width: 186.34px;
+  height: 35px;
+  outline: none;
+  border-radius: 6px;
+  padding: 0 10px;
+  border: 1px solid rgb(186, 182, 182);
+  background-color: rgba(249, 244, 244, 0.76);
+}
+.input-left,
+.input-right {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.top-botton1 span {
+  font-size: 10px;
+  color: red;
+  margin-left: 7px;
+}
+.top-botton1 .rede {
+  border: 1px solid red;
+}
