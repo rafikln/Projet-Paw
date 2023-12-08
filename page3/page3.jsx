@@ -6,15 +6,15 @@ import ver from "./coche.png"
 const Etap03 = () => {
   return (
     <>
-      <div className="boxun">
+      <div className="box1">
         <h1>1</h1>
       </div>
-      <div className="trun"></div>
-      <div className="boxdeux">
+      <div className="tr1 trone"></div>
+      <div className="box2 boxtwo">
         <h1>2</h1>
       </div>
-      <div className="trdeux"></div>
-      <div className="boxtroix">
+      <div className="tr2 trone "></div>
+      <div className="box3 boxtwo">
         <h1>3</h1>
       </div>
       <div className="continer continerr    ">

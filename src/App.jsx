@@ -14,7 +14,7 @@ function App() {
         <Route path="formulaire/Etap01" element={<Etap01 setliste={setliste} />}></Route>
         <Route path="formulaire/Etap02" element={<Etap02 list={list} setliste={setliste} />}></Route>
         <Route path="formulaire/Etap03" element={<Etap03 />}></Route>
-        <Route path="Liste/etudient" element={<Page4 />}></Route>
+        <Route path="/" element={<Page4 />}></Route>
       </Routes>
     </>
   );

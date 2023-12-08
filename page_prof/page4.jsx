@@ -42,10 +42,10 @@ const Liste = (props) => {
     </>
   );
 };
-
 const Page4 = () => {
   const [filter, setFilter] = useState("");
   const [liste, setliste] = useState([]);
+  console.log(liste);
   useEffect(() => {
     const reponsePromise = fetch("http://localhost:3001/liste");
     reponsePromise.then((response) => {
@@ -99,13 +99,10 @@ const Page4 = () => {
             {liste.map((e, i) => {
               if (liste.length == 0) return;
               if (
-                !e.idEtudient.nom
-                  .toLocaleUpperCase()
-                  .includes(filter.toLocaleUpperCase()) &&
-                !e.matricule.includes(filter) &&
-                !e.idEtudient.prenom
-                  .toLocaleUpperCase()
-                  .includes(filter.toLocaleUpperCase())
+                !e.idEtudient ||
+                (!e.idEtudient.nom.toUpperCase().includes(filter.toUpperCase()) &&
+                  !e.matricule.includes(filter) &&
+                  !e.idEtudient.prenom.toUpperCase().includes(filter.toUpperCase()))
               )
                 return;
 

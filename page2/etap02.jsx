@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Etap02.css";
+import "./etap02.css";
 import { Link, useNavigate } from "react-router-dom";
 
 function Etap02(props) {
@@ -13,22 +13,21 @@ function Etap02(props) {
   const [reeerrore, setReeerrore] = useState("");
   let navigate = useNavigate("");
 
-
-const [groupe, setGroupe] = useState("01");
-const [module, setModule] = useState("SID");
-const [nature, setNature] = useState("cc");
+  const [groupe, setGroupe] = useState("01");
+  const [module, setModule] = useState("SID");
+  const [nature, setNature] = useState("cc");
 
   return (
     <>
-      <div className="boxone">
+      <div className="box1">
         <h1>1</h1>
       </div>
-      <div className="trone"></div>
-      <div className="boxtwo">
+      <div className="tr1 trone"></div>
+      <div className="box2 boxtwo">
         <h1>2</h1>
       </div>
-      <div className="trtwo"></div>
-      <div className="boxtree">
+      <div className="tr2 "></div>
+      <div className="box3">
         <h1>3</h1>
       </div>
       <div className="continer">
@@ -91,16 +90,17 @@ const [nature, setNature] = useState("cc");
                     setMat(e.target.value);
                     setMaterrore("");
                   }}
-                  
                 />
                 {materrore ? <span> vous avez oublier groupe</span> : ""}
               </div>
               <div className="input-right">
                 <p>Groupe</p>
-                <select value={groupe}  onChange={(e)=>
-                {
-                  setGroupe(e.target.value);
-                }}>
+                <select
+                  value={groupe}
+                  onChange={(e) => {
+                    setGroupe(e.target.value);
+                  }}
+                >
                   <option value="01">01</option>
                   <option value="02">02</option>
                   <option value="03">03</option>
@@ -111,25 +111,28 @@ const [nature, setNature] = useState("cc");
             <div className="centre">
               <div className="input-left">
                 <p>Module</p>
-                <select  value={module} onChange={(e)=>
-                {
-                  setModule(e.target.value);
-                }}>
+                <select
+                  value={module}
+                  onChange={(e) => {
+                    setModule(e.target.value);
+                  }}
+                >
                   <option value="SAD">SAD</option>
                   <option value="SID">SID</option>
                   <option value="PAW">PAW</option>
                   <option value="IHM">IHM</option>
                   <option value="GL">GL</option>
                   <option value="ASI">ASI</option>
-
                 </select>
               </div>
               <div className="input-right">
                 <p>Nature</p>
-                <select value={nature} onChange={(e)=>
-                {
-                  setNature(e.target.value);
-                }} >
+                <select
+                  value={nature}
+                  onChange={(e) => {
+                    setNature(e.target.value);
+                  }}
+                >
                   <option value="cc">cc</option>
                   <option value="exmen">exmen</option>
                 </select>
